@@ -5,7 +5,7 @@ def get_ingredients(image_path):
     img = cv2.imread(image_path)
     
     if img is None:
-        raise FileNotFoundError(f"The given file could not be opened: ", image_path)
+        raise FileNotFoundError(f"The given file could not be opened: {image_path}")
     
     try:
         response = ollama.chat(

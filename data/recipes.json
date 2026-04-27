@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Fresh Tomato and Cucumber Salad",
+    "ingredients": ["tomatoes", "cucumbers", "parsley", "olive oil", "salt"],
+    "instructions": "Dice the tomatoes and cucumbers. Toss them in a bowl with olive oil, salt, and finely chopped parsley."
+  },
+  {
+    "id": 2,
+    "name": "Cabbage and Egg Stir-fry",
+    "ingredients": ["cabbage", "eggs", "soy sauce", "garlic", "vegetable oil"],
+    "instructions": "Shred cabbage. Scramble eggs and set aside. Stir-fry garlic and cabbage, add soy sauce, then mix in eggs."
+  },
+  {
+    "id": 3,
+    "name": "Creamy Orange Smoothie",
+    "ingredients": ["oranges", "milk", "honey", "ice"],
+    "instructions": "Blend peeled oranges, milk, honey, and ice until smooth."
+  },
+  {
+    "id": 4,
+    "name": "Classic Herb Omelette",
+    "ingredients": ["eggs", "milk", "butter", "salt", "herbs"],
+    "instructions": "Whisk eggs with milk. Melt butter in a pan, pour in eggs, and cook until set. Garnish with herbs."
+  },
+  {
+    "id": 5,
+    "name": "Citrus Cabbage Slaw",
+    "ingredients": ["cabbage", "oranges", "carrots", "parsley", "lemon juice"],
+    "instructions": "Mix shredded cabbage, grated carrots, and orange segments. Dress with lemon juice and parsley."
+  },
+  {
+    "id": 6,
+    "name": "Shakshuka",
+    "ingredients": ["eggs", "tomatoes", "onions", "garlic", "peppers", "olive oil"],
+    "instructions": "Simmer onions, garlic, and peppers in tomatoes. Crack eggs on top and cook until set."
+  },
+  {
+    "id": 7,
+    "name": "Cucumber Cream Cheese Sandwiches",
+    "ingredients": ["cucumbers", "bread", "cream cheese", "parsley"],
+    "instructions": "Spread cream cheese on bread, add sliced cucumbers and parsley."
+  },
+  {
+    "id": 8,
+    "name": "Tomato Cream Soup",
+    "ingredients": ["tomatoes", "milk", "butter", "onions", "herbs"],
+    "instructions": "Sauté onions in butter. Add tomatoes and simmer. Blend, then stir in milk for creaminess."
+  },
+  {
+    "id": 9,
+    "name": "Lemon Garlic Grilled Chicken",
+    "ingredients": ["chicken breast", "lemon", "garlic", "olive oil", "rosemary"],
+    "instructions": "Marinate chicken in lemon juice, oil, garlic, and rosemary. Grill until cooked through."
+  },
+  {
+    "id": 10,
+    "name": "Beef and Carrot Stew",
+    "ingredients": ["beef chunks", "carrots", "onions", "potatoes", "beef broth"],
+    "instructions": "Brown beef and onions. Add carrots, potatoes, and broth. Simmer for 2 hours until tender."
+  },
+  {
+    "id": 11,
+    "name": "Spaghetti Bolognese",
+    "ingredients": ["ground beef", "tomatoes", "onions", "garlic", "spaghetti", "olive oil"],
+    "instructions": "Cook beef with onions and garlic. Add tomatoes to make sauce. Serve over boiled spaghetti."
+  },
+  {
+    "id": 12,
+    "name": "Baked Salmon with Herbs",
+    "ingredients": ["salmon fillet", "lemon", "parsley", "butter", "garlic"],
+    "instructions": "Place salmon on foil. Top with butter, garlic, lemon slices, and parsley. Bake at 200C for 15 mins."
+  },
+  {
+    "id": 13,
+    "name": "Chocolate Brownies",
+    "ingredients": ["chocolate", "butter", "eggs", "flour", "sugar"],
+    "instructions": "Melt chocolate and butter. Whisk in sugar and eggs, then fold in flour. Bake at 180C for 25 mins."
+  },
+  {
+    "id": 14,
+    "name": "Apple Cinnamon Oatmeal",
+    "ingredients": ["oats", "milk", "apples", "cinnamon", "honey"],
+    "instructions": "Cook oats in milk. Top with diced apples, a sprinkle of cinnamon, and a drizzle of honey."
+  },
+  {
+    "id": 15,
+    "name": "Garlic Roast Pork",
+    "ingredients": ["pork loin", "garlic", "rosemary", "olive oil", "salt"],
+    "instructions": "Rub pork with minced garlic, rosemary, and oil. Roast at 190C until internal temp reaches 63C."
+  },
+  {
+    "id": 16,
+    "name": "Berry Yogurt Parfait",
+    "ingredients": ["yogurt", "berries", "honey", "granola"],
+    "instructions": "Layer yogurt, berries, and granola in a glass. Drizzle with honey between layers."
+  },
+  {
+    "id": 17,
+    "name": "Hearty Lentil Soup",
+    "ingredients": ["lentils", "onions", "carrots", "celery", "vegetable broth"],
+    "instructions": "Sauté veggies. Add lentils and broth. Simmer until lentils are soft (about 30 mins)."
+  },
+  {
+    "id": 18,
+    "name": "Fluffy Pancakes",
+    "ingredients": ["flour", "eggs", "milk", "sugar", "baking powder", "butter"],
+    "instructions": "Mix dry and wet ingredients separately, then combine. Fry small amounts of batter in a buttered pan."
+  },
+  {
+    "id": 19,
+    "name": "Quick Shrimp Scampi",
+    "ingredients": ["shrimp", "garlic", "butter", "lemon juice", "parsley", "pasta"],
+    "instructions": "Sauté shrimp and garlic in butter. Add lemon juice and parsley. Toss with cooked pasta."
+  },
+  {
+    "id": 20,
+    "name": "Potato and Onion Frittata",
+    "ingredients": ["potatoes", "onions", "eggs", "olive oil", "salt"],
+    "instructions": "Fry sliced potatoes and onions in oil until soft. Pour beaten eggs over them and cook until firm."
+  }
+]
