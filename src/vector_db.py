@@ -2,6 +2,8 @@ import json
 import numpy as np
 import ollama
 
+embedding_cache = {}
+
 def get_embedding(text):
     response = ollama.embeddings(model='nomic-embed-text', prompt=text)
     return response['embedding']
@@ -24,6 +26,13 @@ def find_best_recipes(found_ingredients, top_k=2):
     for recipe in recipes:
         recipe_text = f"{recipe['name']} {', '.join(recipe['ingredients'])}"
         recipe_vector = np.array(get_embedding(recipe_text))
+        
+        # ha a cache-ben már benne van, akkor nem kell megint lefuttatni az embeddinget
+        if recipe_text in embedding_cache:
+            recipe_vector = embedding_cache[recipe_text]
+        else:
+            recipe_vector = np.array(get_embedding(recipe_text))
+            embedding_cache[recipe_text] = recipe_vector
         
         score = cosine_similarity(query_vector, recipe_vector)
         scored_recipes.append((score, recipe))
