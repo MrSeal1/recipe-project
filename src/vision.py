@@ -1,12 +1,6 @@
-import cv2
 import ollama
 
-def get_ingredients(image_path):
-    img = cv2.imread(image_path)
-    
-    if img is None:
-        raise FileNotFoundError(f"The given file could not be opened: {image_path}")
-    
+def get_ingredients(image_data):
     try:
         response = ollama.chat(
             model='qwen3-vl:2b',
@@ -14,7 +8,7 @@ def get_ingredients(image_path):
                 {
                     'role': 'user',
                     'content': 'What food ingredients do you see on the image? Do not guess. Respond only with the english names of the items separated by commas.',
-                    'images': [image_path]
+                    'images': [image_data]
                 }
             ]
         )

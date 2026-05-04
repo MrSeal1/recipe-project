@@ -8,8 +8,12 @@ def main():
     if not os.path.exists(image_path):
         print(f"Error: the file ({image_path}) does not exist")
         exit()
+        
+    # beolvassuk a képet bináris formátumban ("rb"=read binary)
+    with open(image_path, "rb") as f:
+        image_bytes = f.read()
 
-    ingredients = get_ingredients(image_path)
+    ingredients = get_ingredients(image_bytes)
     
     if ingredients:
         print(f"\nIngredients list: {ingredients}")
