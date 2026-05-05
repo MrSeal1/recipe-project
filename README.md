@@ -15,8 +15,9 @@ This project is an AI powered recipe search app. It can recognize food ingredien
 1. Clone repository
 2. Create and activate a virtual environment
 3. Install Python dependencies (with  `pip install` or `uv add`):
-    - opencv-python
+    - numpy
     - ollama
+    - streamlit
 
 ## Usage
 
