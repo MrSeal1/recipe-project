@@ -25,7 +25,6 @@ def find_best_recipes(found_ingredients, top_k=2):
     
     for recipe in recipes:
         recipe_text = f"{recipe['name']} {', '.join(recipe['ingredients'])}"
-        recipe_vector = np.array(get_embedding(recipe_text))
         
         # ha a cache-ben már benne van, akkor nem kell megint lefuttatni az embeddinget
         if recipe_text in embedding_cache:

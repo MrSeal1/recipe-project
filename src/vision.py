@@ -15,7 +15,10 @@ def get_ingredients(image_data):
             ]
         )
         
-        content = response['message']['content']
+        content = response['message']['content'].lower().strip()
+        
+        if 'no_food_found' in content:
+            return ['no_food_found']
         
         # feldarabolás, trimmelés és listává alakítás
         ingredients_list = [item.strip().lower() for item in content.split(',') if item.strip()]
