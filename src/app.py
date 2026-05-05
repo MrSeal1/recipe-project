@@ -22,7 +22,7 @@ if uploaded_file is not None:
     col1, col2 = st.columns([1, 1])
     
     with col1:
-        st.image(image, caption="Uploaded Image", use_container_width=True)
+        st.image(image, caption="Uploaded Image", width='stretch')
     
     image_bytes = uploaded_file.getvalue()
 
@@ -45,9 +45,18 @@ if uploaded_file is not None:
                     st.write("### Recommended Recipes")
                     
                     for score, recipe in best_matches:
-                        match_pct = int(score * 100)
+                        r_ingredients = [item.strip().lower() for item in recipe['ingredients']]
+                        recipe_set = set(r_ingredients)
+
+                        missing = recipe_set - found_set
+                        available = recipe_set.intersection(found_set)
                         
-                        with st.expander(f"{recipe['name']} ({match_pct}% match)"):
+                        if len(recipe_set) > 0:
+                            true_match_pct = int((len(available) / len(recipe_set)) * 100)
+                        else:
+                            true_match_pct = 0
+                        
+                        with st.expander(f"{recipe['name']} ({true_match_pct}% match)"):
                             
                             r_ingredients = [item.strip().lower() for item in recipe['ingredients']]
                             recipe_set = set(r_ingredients)
