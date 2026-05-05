@@ -30,7 +30,9 @@ if uploaded_file is not None:
         try:
             ingredients = get_ingredients(image_bytes)
             
-            if ingredients:
+            if 'no_food_found' in ingredients:
+                st.error('Please upload an image containing ingredients.')            
+            elif ingredients:
                 with col2:
                     st.success("### Identified Ingredients")
                     st.write(", ".join([f"**{i}**" for i in ingredients]))

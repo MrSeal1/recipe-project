@@ -7,7 +7,7 @@ def get_ingredients(image_data):
             messages=[
                 {
                     'role': 'user',
-                    'content': 'What food ingredients do you see on the image? Do not guess. Respond only with the english names of the items separated by commas.',
+                    'content': 'What food ingredients do you see on the image? Do not guess. Respond only with the english names of the items separated by commas. If there are no ingredients on the image, reply only with the following phrase: NO_FOOD_FOUND',
                     'images': [image_data]
                 }
             ]
