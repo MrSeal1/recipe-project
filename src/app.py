@@ -1,5 +1,4 @@
 import streamlit as st
-import os
 from vision import get_ingredients
 from vector_db import find_best_recipes
 from PIL import Image
